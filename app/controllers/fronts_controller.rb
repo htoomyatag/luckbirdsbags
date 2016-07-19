@@ -11,7 +11,7 @@ class FrontsController < ApplicationController
   def home
   end
 
-  def products
+  def our_products
     
   end
 

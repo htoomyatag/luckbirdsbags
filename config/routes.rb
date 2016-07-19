@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :fronts
 
    get 'home' => 'fronts#home'
-   get 'products' => 'fronts#products'
+   get 'our_products' => 'fronts#our_products'
    get 'about' => 'fronts#about'
    get 'contact' => 'fronts#contact'
    
