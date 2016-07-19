@@ -4,8 +4,10 @@
 <head>
 
 <title>LUCKY BAG & SWALLOW</title>
+<link rel="shortcut icon" href="<%= asset_path 'm.png'%>">
 
 <!-- For-Mobile-Apps -->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Lucky Bags a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
@@ -15,7 +17,6 @@
 
 	<%= javascript_include_tag 'modernizr.js' %>
 	<%= javascript_include_tag 'modernizr-2.6.2.min.js' %>
-	<%= javascript_include_tag 'bootstrap.min.js' %>
 	<%= javascript_include_tag 'jquery.min.js' %>
 	<%= javascript_include_tag 'jquery.mobile.customized.min.js' %>
 	<%= javascript_include_tag 'jquery.easing.1.3.js' %>
@@ -30,6 +31,7 @@
 	<%= javascript_include_tag 'main.js' %>
 	<%= javascript_include_tag 'move-top.js' %>
 	<%= javascript_include_tag 'easing.js' %>
+	<%= javascript_include_tag 'bootstrap.min.js' %>
 
 
      <%= csrf_meta_tags %>
@@ -53,13 +55,13 @@
 
 			<!-- Email -->
 			<div class="email">
-				<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email : <a href="mailto:mail@example.com" style="color:white;">info(at)example.com</a></p>
+				<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email : <a href="mailto:info@luckybagmyanmar.com" style="color:white;font-size:11px;">info@luckybagmyanmar.com</a></p>
 			</div>
 			<!-- //Email -->
 
 			<!-- Phone -->
 			<div class="phone">
-				<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Phone : <a href="#" style="color:white;">+1 (734) 123-4567</a></p>
+				<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Phone : <a href="#" style="color:white;font-size:11px;">+95 (09)527400</a></p>
 			</div>
 			<!-- //Phone -->
 			<div class="clearfix"></div>
@@ -108,18 +110,7 @@
 		<!-- //Navigation -->
 
 		<!-- Slider -->
-		<div class="slider">
-			<div class="camera_wrap camera_magenta_skin" id="camera_wrap_2">
-				<div data-src="assets/slide-1.jpg"></div>
-				<div data-src="assets/slide-1.jpg"></div>
-				<div data-src="assets/slide-1.jpg"></div>
-				<div data-src="assets/slide-1.jpg"></div>
-				<div data-src="assets/slide-1.jpg"></div>
-			</div>
-		</div>
-		<!-- //Slider -->
-
-	</div>
+	
 	<!-- //Header -->
 
 	<%= yield %>

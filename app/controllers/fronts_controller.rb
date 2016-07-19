@@ -1,6 +1,7 @@
 class FrontsController < ApplicationController
   before_action :set_front, only: [:show, :edit, :update, :destroy]
 
+
   # GET /fronts
   # GET /fronts.json
   def index

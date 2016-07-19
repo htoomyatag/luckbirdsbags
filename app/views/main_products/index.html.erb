@@ -1,0 +1,35 @@
+
+
+
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Main Products</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @main_products.each do |main_product| %>
+      <tr>
+        <td><%= main_product.title %></td>
+        <td><%= main_product.description %></td>
+        <td><%= link_to 'Edit', edit_main_product_path(main_product) %></td>
+        <td><%= link_to 'Destroy', main_product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Main product', new_main_product_path %>
+
+
+</div>

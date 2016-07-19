@@ -64,7 +64,7 @@ img {
 /*-- Index-Page-Styling --*/
 
 .top-bar {
-	background-color: #df2c2c;
+	background-color: #34BBB1;
 	text-align: right;
 	padding: 10px 0;
 	color: #FFF;
@@ -115,10 +115,10 @@ span.glyphicon.glyphicon-envelope, span.glyphicon.glyphicon-earphone {
 .logo a {
 	font-size: 30px;
 	font-weight: 700;
-	color: #e91d26;;
+	color: #34BBB1;;
 }
 .logo a:hover {
-	color: #e91d26;
+	color: #34BBB1;
 }
 .underline {
 	width: 38%;
@@ -444,7 +444,7 @@ span.glyphicon.glyphicon-envelope, span.glyphicon.glyphicon-earphone {
 	font-size: 45px;
 	font-weight: 600;
 	margin-bottom: 85px;
-	color: #bf1c23;
+	color: #4c7a78;
 }
 .good-thing1, .good-thing2, .good-thing3 {
 	background-color: #F5F5F5;
@@ -912,7 +912,7 @@ figure.effect-julia:hover p {
 
 .inner-page {
 	padding-top: 175px;
-	background-color: #bf1c23;
+	background-color: #4c7a78;
 	position: relative;
 }
 .inner-page h1 {
