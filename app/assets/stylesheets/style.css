@@ -385,7 +385,7 @@ span.glyphicon.glyphicon-envelope, span.glyphicon.glyphicon-earphone {
 	border-bottom: 1px solid #D8D8D8;
 }
 .tab-content-title-h5 {
-	width: 80%;
+
 	float: left;
 }
 .tab-content-title-h5 h5 {
@@ -2283,12 +2283,7 @@ form.contact_form {
 	.tabs nav ul li {
 		margin: 0 54px;
 	}
-	.tab-content-title-h5 {
-		width: 83%;
-	}
-	.tab-content-title-icon {
-		width: 17%;
-	}
+	
 	.tab-content-title {
 		padding: 10px 10px 10px 0;
 	}
@@ -3724,4 +3719,11 @@ form.contact_form {
 #the_img{
 	height: 50px;
 	width: 50px;
+}
+
+
+
+#the_show_img{
+	height: 250px;
+	width: 250px;
 }

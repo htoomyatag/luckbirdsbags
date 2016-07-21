@@ -16,7 +16,7 @@
 	<div class="about">
 
 		<div class="about-index">
-			<h1 style="color:#4c7a78;">ABOUT US</h1>
+			<h1 style="color:#4c7a78;">ABOUT PRODUCTS</h1>
 			<h3>Our main products</h3><br/>
 
 			<div class="container">
@@ -26,201 +26,43 @@
 					<div class="content-wrap">
 
 								<div class="tab-contents">
-									<div class="col-md-3 col-sm-3 tab-content-1">
-										<div class="tab-content">
-											<div class="tab-content-image">
-												<img src="assets/product1.jpg" alt="Lucky Bags">
-											</div>
-											<div class="tab-content-info">
-												<div class="tab-content-title">
-													<div class="tab-content-title-h5">
-														<h5>Black</h5>
+									<% @main_products.each do |main_product| %>
+											<div class="col-md-3 col-sm-3 tab-content-1" style="padding:10px;">
+												<div class="tab-content">
+													<div class="tab-content-image">
+														<%= image_tag main_product.avatar.url(:medium), :id=>"the_show_img", :alt=>"Lucky Bags" %>
 													</div>
-													<div class="tab-content-title-icon">
-														<img src="assets/tab-c1-icon1.png" alt="Lucky Bags">
-													</div>
-													<div class="clearfix"></div>
-												</div>
-												<div class="tab-content-rating">
-													<span></span>
-												</div>
-											
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-3 tab-content-2">
-										<div class="tab-content">
-											<div class="tab-content-image">
-												<img src="assets/product2.jpg" alt="Lucky Bags">
-											</div>
-											<div class="tab-content-info">
-												<div class="tab-content-title">
-													<div class="tab-content-title-h5">
-															<h5>Green</h5>
-													</div>
-													<div class="tab-content-title-icon">
-														<img src="assets/tab-c1-icon1.png" alt="Lucky Bags">
+													<div class="tab-content-info">
+														<div class="tab-content-title">
+															<div class="tab-content-title-h5">
+																<h5 style="font-size:10px;height:30px;color:#4c7a78;">
+																<%= main_product.title %></h5>
+															</div>
+															
+															<div class="clearfix"></div>
+														</div>
+														<div class="tab-content-rating">
+															<p style="font-size:10px;height:60px;"><%= main_product.description %></p>
+														</div>
+													
 													</div>
 													<div class="clearfix"></div>
 												</div>
-												<div class="tab-content-rating">
-													<span></span>
-												</div>
-											
 											</div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-3 tab-content-3">
-										<div class="tab-content">
-											<div class="tab-content-image">
-												<img src="assets/product3.jpg" alt="Lucky Bags">
-											</div>
-											<div class="tab-content-info">
-												<div class="tab-content-title">
-													<div class="tab-content-title-h5">
-															<h5>White</h5>
-													</div>
-													<div class="tab-content-title-icon">
-														<img src="assets/tab-c1-icon1.png" alt="Lucky Bags">
-													</div>
-													<div class="clearfix"></div>
-												</div>
-												<div class="tab-content-rating">
-													<span></span>
-												</div>
-											
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-3 tab-content-4">
-										<div class="tab-content">
-											<div class="tab-content-image">
-												<img src="assets/product4.jpg" alt="Lucky Bags">
-											</div>
-											<div class="tab-content-info">
-												<div class="tab-content-title">
-													<div class="tab-content-title-h5">
-															<h5>Yellow</h5>
-													</div>
-													<div class="tab-content-title-icon">
-														<img src="assets/tab-c1-icon1.png" alt="Lucky Bags">
-													</div>
-													<div class="clearfix"></div>
-												</div>
-												<div class="tab-content-rating">
-													<span></span>
-												</div>
-											
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
+									<% end %>
+							    </div>
 
-									<!--  -->
 
-									<div class="col-md-3 col-sm-3 tab-content-1" style="padding-top:20px;">
-										<div class="tab-content">
-											<div class="tab-content-image">
-												<img src="assets/product5.jpg" alt="Lucky Bags">
-											</div>
-											<div class="tab-content-info">
-												<div class="tab-content-title">
-													<div class="tab-content-title-h5">
-														<h5>Blue</h5>
-													</div>
-													<div class="tab-content-title-icon">
-														<img src="assets/tab-c1-icon1.png" alt="Lucky Bags">
-													</div>
-													<div class="clearfix"></div>
-												</div>
-												<div class="tab-content-rating">
-													<span></span>
-												</div>
-											
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-3 tab-content-2" style="padding-top:20px;">
-										<div class="tab-content">
-											<div class="tab-content-image">
-												<img src="assets/product6.jpg" alt="Lucky Bags">
-											</div>
-											<div class="tab-content-info">
-												<div class="tab-content-title">
-													<div class="tab-content-title-h5">
-															<h5>Gray</h5>
-													</div>
-													<div class="tab-content-title-icon">
-														<img src="assets/tab-c1-icon1.png" alt="Lucky Bags">
-													</div>
-													<div class="clearfix"></div>
-												</div>
-												<div class="tab-content-rating">
-													<span></span>
-												</div>
-											
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-3 tab-content-3" style="padding-top:20px;">
-										<div class="tab-content">
-											<div class="tab-content-image">
-												<img src="assets/product7.jpg" alt="Lucky Bags">
-											</div>
-											<div class="tab-content-info">
-												<div class="tab-content-title">
-													<div class="tab-content-title-h5">
-															<h5>Orange</h5>
-													</div>
-													<div class="tab-content-title-icon">
-														<img src="assets/tab-c1-icon1.png" alt="Lucky Bags">
-													</div>
-													<div class="clearfix"></div>
-												</div>
-												<div class="tab-content-rating">
-													<span></span>
-												</div>
-											
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-3 tab-content-4" style="padding-top:20px;">
-										<div class="tab-content">
-											<div class="tab-content-image">
-												<img src="assets/product8.jpg" alt="Lucky Bags">
-											</div>
-											<div class="tab-content-info">
-												<div class="tab-content-title">
-													<div class="tab-content-title-h5">
-															<h5>Red</h5>
-													</div>
-													<div class="tab-content-title-icon">
-														<img src="assets/tab-c1-icon1.png" alt="Lucky Bags">
-													</div>
-													<div class="clearfix"></div>
-												</div>
-												<div class="tab-content-rating">
-													<span></span>
-												</div>
-											
-											</div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
-								</div>
 					
 
 					</div>
+
 				</div>
 			</div>
 		</div>
-
+	    <center><br/>
+	    	<a href="/our_products" style="text-align:center;font-size:20px;">view more products</a>
+	    </center>
 	</div>
 	<!-- //About-Tabs -->
 

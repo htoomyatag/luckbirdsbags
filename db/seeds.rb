@@ -37,7 +37,7 @@ customer = Customer.create([
 	])
 
 
-product = Product.create([
+main_products = MainProduct.create([
 
 {:title => "(1) LUCKY BAG T-SHIRT BAGS (HDPE/LDPE)", description:"This is for multi-purposed usage.Available sizes : 5x9, 6x11, 6x14, 7x15, 8x15, 9x18, 12x20, 12x24, 16x35 inches."},
 
