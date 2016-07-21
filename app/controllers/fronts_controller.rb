@@ -16,7 +16,7 @@ class FrontsController < ApplicationController
   end
 
   def about
-    
+     @aboutu = Aboutu.find(1)
   end
 
   def contact
