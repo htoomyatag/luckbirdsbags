@@ -12,6 +12,7 @@
             <tr>
               <th>Title</th>
               <th>Description</th>
+              <th></th>
               <th colspan="2"></th>
             </tr>
           </thead>
@@ -21,6 +22,7 @@
               <tr>
                 <td><%= customer.title %></td>
                 <td><%= customer.description %></td>
+                <td><%= image_tag customer.avatar.url(:thumb), :id=>"the_img" %></td>
              
                 <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
                 <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
