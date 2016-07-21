@@ -185,78 +185,15 @@
 
 			<div class="container">
 				<div class="grid">
-					<figure class="effect-julia col-md-4 col-sm-4">
-						<img src="assets/tab-c3-4.jpg" alt="Lucky Bags"/>
-						<figcaption>
-							<h4><span>Lucky </span> Bags</h4>
-							<div class="figcaption-info">
-								<p>Lorem ipsum dolor sit amet</p>
-								<p>Consectetur adipiscing elit</p>
-								<p>Sed do eiusmod tempor duse</p>
-							</div>
-							<a href="gallery.html">View more</a>
-						</figcaption>
-					</figure>
-					<figure class="effect-julia col-md-4 col-sm-4">
-						<img src="assets/tab-c3-4.jpg" alt="Lucky Bags"/>
-						<figcaption>
-							<h4><span>Lucky </span> Bags</h4>
-							<div class="figcaption-info">
-								<p>Lorem ipsum dolor sit amet</p>
-								<p>Consectetur adipiscing elit</p>
-								<p>Sed do eiusmod tempor duse</p>
-							</div>
-							<a href="gallery.html">View more</a>
-						</figcaption>
-					</figure>
-					<figure class="effect-julia col-md-4 col-sm-4">
-						<img src="assets/tab-c1-3.jpg" alt="Lucky Bags"/>
-						<figcaption>
-							<h4><span>Lucky </span> Bags</h4>
-							<div class="figcaption-info">
-								<p>Lorem ipsum dolor sit amet</p>
-								<p>Consectetur adipiscing elit</p>
-								<p>Sed do eiusmod tempor duse</p>
-							</div>
-							<a href="gallery.html">View more</a>
-						</figcaption>
-					</figure>
-					<figure class="effect-julia col-md-4 col-sm-4">
-						<img src="assets/tab-c3-1.jpg" alt="Lucky Bags"/>
-						<figcaption>
-							<h4><span>Lucky </span> Bags</h4>
-							<div class="figcaption-info">
-								<p>Lorem ipsum dolor sit amet</p>
-								<p>Consectetur adipiscing elit</p>
-								<p>Sed do eiusmod tempor duse</p>
-							</div>
-							<a href="gallery.html">View more</a>
-						</figcaption>
-					</figure>
-					<figure class="effect-julia col-md-4 col-sm-4">
-						<img src="assets/tab-c1-2.jpg" alt="Lucky Bags"/>
-						<figcaption>
-							<h4><span>Lucky </span> Bags</h4>
-							<div class="figcaption-info">
-								<p>Lorem ipsum dolor sit amet</p>
-								<p>Consectetur adipiscing elit</p>
-								<p>Sed do eiusmod tempor duse</p>
-							</div>
-							<a href="gallery.html">View more</a>
-						</figcaption>
-					</figure>
-					<figure class="effect-julia col-md-4 col-sm-4">
-						<img src="assets/tab-c3-4.jpg" alt="Lucky Bags"/>
-						<figcaption>
-							<h4><span>Lucky </span> Bags</h4>
-							<div class="figcaption-info">
-								<p>Lorem ipsum dolor sit amet</p>
-								<p>Consectetur adipiscing elit</p>
-								<p>Sed do eiusmod tempor duse</p>
-							</div>
-							<a href="gallery.html">View more</a>
-						</figcaption>
-					</figure>
+					<% @customers.each do |customer| %>
+							<figure class="effect-julia col-md-4 col-sm-4">
+								<%= image_tag customer.avatar.url(:thumb), :id=>"the_customerimg", :alt=>"Lucky Bags"%>
+								<figcaption>
+									<h4><%= customer.title %></h4>
+								</figcaption>
+							</figure>
+				    <% end %>
+					
 					<div class="clearfix"></div>
 				</div>
 			</div>

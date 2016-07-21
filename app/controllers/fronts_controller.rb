@@ -10,6 +10,7 @@ class FrontsController < ApplicationController
 
   def home
      @main_products = MainProduct.limit(8)
+     @customers = Customer.all
   end
 
   def our_products
