@@ -1,6 +1,6 @@
 lock '3.6.0'
 
-set :application, 'my-app'
+set :application, 'luckybag'
 set :repo_url, 'git@bitbucket.org:enlighten_studio/luckybag.git'  # Edit this to match your repository
 set :branch, :master
 set :deploy_to, '/home/deploy/luckybag'
