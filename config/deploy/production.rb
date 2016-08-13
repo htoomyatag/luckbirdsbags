@@ -61,5 +61,5 @@
 #   }
 
 
-server '199.195.116.29', user: 'deploy', roles: %w{web app db}
+server 'server.luckybagmyanmar.com', user: 'deploy', roles: %w{web app db}
 
