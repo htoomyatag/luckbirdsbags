@@ -10,60 +10,24 @@
 	<div class="projects">
 
 		<h2>Some successful products manufacture by us</h2>
+			    <% @main_products.each do |main_product| %>
+					<div class="project-1">
+						<div class="container">
+							<div class="col-md-4 col-sm-6 project-image">
+								<%= image_tag main_product.avatar.url(:medium), :id=>"product_img", :alt=>"products" %>
+							</div>
+							<div class="col-md-8 col-sm-6 project-info">
+								<h4 style="font-size:16px;"><%= main_product.title %></h4>
+								<p><%= main_product.description %></p>
+							</div>
+							<div class="clearfix"></div>					
+						</div>
+					</div>
+				<% end %>
 
-			<div class="project-1">
-				<div class="container">
-					<div class="col-md-6 col-sm-6 project-image">
-						<img src="assets/tab-c4-1.jpg" alt="Excel Industries">
-					</div>
-					<div class="col-md-6 col-sm-6 project-info">
-						<h4>Lorem Ipsum Dolor Sit Amet</h4>
-						<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-					</div>
-					<div class="clearfix"></div>					
-				</div>
-			</div>
 
-			<div class="project-2">
-				<div class="container">
-					<div class="col-md-6 col-sm-6 project-info">
-						<h4>Lorem Ipsum Dolor Sit Amet</h4>
-						<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-					</div>
-					<div class="col-md-6 col-sm-6 project-image">
-						<img src="assets/tab-c4-2.jpg" alt="Excel Industries">
-					</div>
-					<div class="clearfix"></div>					
-				</div>
-			</div>
 
-			<div class="project-3">
-				<div class="container">
-					<h3>ABRASIVE CUTTING</h3>
-					<div class="col-md-6 col-sm-6 project-image">
-						<img src="assets/tab-c4-3.jpg" alt="Excel Industries">
-					</div>
-					<div class="col-md-6 col-sm-6 project-info">
-						<h4>Lorem Ipsum Dolor Sit Amet</h4>
-						<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-					</div>
-					<div class="clearfix"></div>					
-				</div>
-			</div>
-
-			<div class="project-4">
-				<div class="container">		
-					<div class="col-md-6 col-sm-6 project-info">
-						<h4>Lorem Ipsum Dolor Sit Amet</h4>
-						<p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-					</div>
-					<div class="col-md-6 col-sm-6 project-image">
-						<img src="assets/tab-c4-4.jpg" alt="Excel Industries">
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
+			
 
 	</div>
 	<!-- //Projects -->
@@ -74,7 +38,7 @@
 		<h3>TEAM</h3>
 
 		<div class="container">
-			<div class="view view-fourth col-md-4 col-sm-4">
+			<div class="col-md-4" >
                 <img src="assets/team-1.jpg" alt="Excel Industries" />
                 <div class="mask">
                     <h4>Name</h4>
@@ -86,7 +50,7 @@
 			        </ul>
                 </div>
             </div>
-            <div class="view view-fourth col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4" >
                 <img src="assets/team-2.jpg" alt="Excel Industries" />
                 <div class="mask">
                     <h4>Name</h4>
@@ -98,7 +62,7 @@
 			        </ul>
                 </div>
             </div>
-            <div class="view view-fourth col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4" >
                 <img src="assets/team-3.jpg" alt="Excel Industries" />
                 <div class="mask">
 					<h4>Name</h4>
@@ -110,7 +74,7 @@
 			        </ul>
                 </div>
             </div>
-            <div class="view view-fourth col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4" >
                 <img src="assets/team-4.jpg" alt="Excel Industries" />
                 <div class="mask">
                     <h4>Name</h4>
@@ -122,7 +86,7 @@
 			        </ul>
                 </div>
             </div>
-            <div class="view view-fourth col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4" >
                 <img src="assets/team-5.jpg" alt="Excel Industries" />
                 <div class="mask">
                     <h4>Name</h4>
@@ -134,7 +98,7 @@
 			        </ul>
                 </div>
             </div>
-            <div class="view view-fourth col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4" >
                 <img src="assets/team-6.jpg" alt="Excel Industries" />
                 <div class="mask">
                      <h4>Name</h4>

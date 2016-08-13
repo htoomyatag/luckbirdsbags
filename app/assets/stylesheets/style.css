@@ -3731,5 +3731,10 @@ form.contact_form {
 
 #the_customerimg{
 	height: 200px;
-	width: 350px;
+	width: 300px;
+}
+
+#product_img{
+	height: 200px;
+	width: 300px;
 }

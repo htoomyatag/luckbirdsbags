@@ -14,7 +14,11 @@ class FrontsController < ApplicationController
   end
 
   def our_products
-    
+      @main_products = MainProduct.all
+  end
+
+  def our_new_product
+
   end
 
   def about

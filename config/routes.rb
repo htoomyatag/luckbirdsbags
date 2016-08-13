@@ -12,6 +12,7 @@ Rails.application.routes.draw do
    get 'our_products' => 'fronts#our_products'
    get 'about' => 'fronts#about'
    get 'contact' => 'fronts#contact'
+   get 'our_new_product' => 'fronts#our_new_product'
    
   
   # The priority is based upon order of creation: first created -> highest priority.
