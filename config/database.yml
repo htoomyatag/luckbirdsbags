@@ -34,3 +34,15 @@ production:
   pool: 5
   host: localhost
   port: 5432
+
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: luckybag_production
+  username: luckybag
+  password: privatehma
+  pool: 5
+  host: localhost
+  port: 5432
+
