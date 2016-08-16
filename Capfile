@@ -74,3 +74,7 @@ Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
 
 
 
+
+
+SSHKit.config.command_map[:rake] ||= "rake"
+SSHKit.config.command_map[:rake].sub!(/\(.*\)rake/, "\1bundle exec rake")
