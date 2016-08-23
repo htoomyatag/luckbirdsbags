@@ -45,34 +45,40 @@
 	<!-- Header -->
 	<div class="header" id="home">
 
+
+
+			<nav class="navbar navbar-default" style="background-color: #34BBB1;">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			     	<%= link_to 'Home', root_path, :class=>"btn btn-default navbar-btn", :id=>"nav_btn" %>
+					<%= link_to 'Product', our_products_path, :class=>"btn btn-default navbar-btn", :id=>"nav_btn" %>
+				    <%= link_to 'About us', about_path, :class=>"btn btn-default navbar-btn", :id=>"nav_btn" %>
+					<%= link_to 'Contact', contact_path, :class=>"btn btn-default navbar-btn", :id=>"nav_btn" %>
+
+					<p class="navbar-text navbar-left">
+					<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email : 
+					<a href="mailto:info@luckybagmyanmar.com" style="color:white;font-size:11px;">
+					info@luckybagmyanmar.com</a>
+
+					</p>
+					<p class="navbar-text navbar-left">
+					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Phone : <a href="#" style="color:white;font-size:11px;">+95 (09)527400</a>
+					</p>
+				
+
+			    </div>
+			  </div>
+			</nav>
+
 		<!-- Top-Bar -->
-		<div class="top-bar">
-			<!-- Slogan -->
-			<div class="slogan">
-				<p>The largest plastic production factory in Myanmar</p>
-			</div>
-			<!-- //Slogan -->
-
-			<!-- Email -->
-			<div class="email">
-				<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email : <a href="mailto:info@luckybagmyanmar.com" style="color:white;font-size:11px;">info@luckybagmyanmar.com</a></p>
-			</div>
-			<!-- //Email -->
-
-			<!-- Phone -->
-			<div class="phone">
-				<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>Phone : <a href="#" style="color:white;font-size:11px;">+95 (09)527400</a></p>
-			</div>
-			<!-- //Phone -->
-			<div class="clearfix"></div>
-		</div>
+		
 		<!-- //Top-Bar -->
 
 		<!-- Bottom-Bar -->
 		<div class="bottom-bar">
 			<!-- Logo -->
 			<div class="logo">
-				<a href="index.html">LUCKY BAG & SWALLOW</a>
+				<img src="assets/lucky_bag_logo.png" id="my_logo">
 			</div>
 			<!-- //Logo -->
 
@@ -106,7 +112,7 @@
 			<span></span>
 		</div>
 
-		<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+	
 		<!-- //Navigation -->
 
 		<!-- Slider -->
